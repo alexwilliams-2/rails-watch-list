@@ -1,0 +1,8 @@
+<h1> This is a movie list form </h1>
+
+<%= simple_form_for @list do |f| %>
+  <%= f.input :name %>
+  <%= f.submit  "Submit", class: "btn btn-primary" %>
+<% end %>
+
+<%= link_to 'See all Lists', lists_path %>
